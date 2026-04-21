@@ -1,4 +1,5 @@
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import { Link } from "react-router-dom";
 // Вказуємо шлях до файлу, який ми щойно створили в Кроці 2
 import {
   Dropdown,
@@ -16,21 +17,21 @@ export const Header = () => {
         <img src={ravenLogo} alt='Raven Logo' className='w-15 h-15' />
       </a>
       <nav className=' rounded-xl text-lg bg-zinc-900/50 flex font-raven  gap-5 content-center py-[12px] px-[25px]'>
-        <a className={navLinkClass} href='#'>
+        <Link className={navLinkClass} to='/'>
           HOME
-        </a>
-        <a className={navLinkClass} href='#'>
+        </Link>
+        <Link className={navLinkClass} to='/media'>
           MEDIA
-        </a>
-        <a className={navLinkClass} href='#'>
+        </Link>
+        <Link className={navLinkClass} to='/the_game'>
           THE GAME
-        </a>
-        <a className={navLinkClass} href='#'>
+        </Link>
+        <a className={navLinkClass} href='community'>
           COMMUNITY
         </a>
-        <a className={navLinkClass} href='#'>
+        <Link className={navLinkClass} to='/download'>
           DOWNLOAD
-        </a>
+        </Link>
         <Dropdown>
           <DropdownButton>
             EN
