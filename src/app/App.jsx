@@ -11,10 +11,7 @@ import bgHomePage from "../shared/assets/img/bgHomePage.png";
 function App() {
   return (
     <BrowserRouter>
-      <div
-        className='I flex min-h-screen  bg-cover bg-center bg-no-repeat justify-center '
-        style={{ backgroundImage: `url(${bgHomePage})` }}
-      >
+      <div className='I flex  justify-center'>
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
