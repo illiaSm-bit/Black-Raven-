@@ -3,12 +3,22 @@
   font-family: "Pixelify";
   src: url(./src/shared/assets/font/PixelifySans-Medium.ttf);
 }
+
+@import "tailwindcss";
+
 * {
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 @theme {
   --font-raven: "Pixelify", ui-sans-serif, system-ui;
 }
