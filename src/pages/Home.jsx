@@ -1,19 +1,21 @@
 import bgHomePage from "../shared/assets/img/bgHomePage.png";
+import BlackRaven from "../shared/assets/img/BlackRaven.png";
 
 export const Home = () => {
   return (
     <main
-      className='min-h-screen min-w-screen  bg-cover bg-center bg-no-repeat flex justify-center'
+      className='  min-h-screen min-w-screen  bg-cover bg-center bg-no-repeat flex justify-center '
       style={{ backgroundImage: `url(${bgHomePage})` }}
     >
       <div className=' mt-35 w-[985px] flex flex-col items-center    '>
         <div className='flex flex-col items-center'>
-          <h1 className=' mt-35 text-8xl text-amber-50 font-raven'>
-            BLACK RAVEN
-          </h1>
-          <h3>BLACK RAVEN STEAM </h3>
-          <a href='https://store.steampowered.com/app/3309290/CHornij_voron/'>
-            GO STeam
+          <img src={BlackRaven} alt='' />
+          <h3>BLACK RAVEN Is Available Now </h3>
+          <a
+            className='px-[40px] py-[15px] text-xl   font-raven  shadow-[6px_6px_0px_#5C002C] text-white  bg-[#A36977] text- font-raven708 '
+            href='https://store.steampowered.com/app/3309290/CHornij_voron/'
+          >
+            Go Steam
           </a>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
-import { NavLink, Link } from "react-router-dom";
-// Вказуємо шлях до файлу, який ми щойно створили в Кроці 2
+import { NavLink } from "react-router-dom";
+
 import {
   Dropdown,
   DropdownButton,
@@ -17,7 +17,7 @@ export const Header = () => {
   const currentLanguage = (i18n.language || "ua").substring(0, 2).toUpperCase();
 
   return (
-    <header className=' flex justify-center content-center items-center  mt-9 gap-16 fixed '>
+    <header className=' absolute flex justify-center content-center items-center  mt-9 gap-16  '>
       <NavLink to='/' className=' bg-red-900  py-[8px] px-[8px] rounded-xl'>
         <img src={ravenLogo} alt='Raven Logo' className='w-15 h-15' />
       </NavLink>
