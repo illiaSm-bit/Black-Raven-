@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Pixelify";
+  src: url(./src/shared/assets/font/PixelifySans-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+@theme {
+  --font-raven: "Pixelify", ui-sans-serif, system-ui;
+}
